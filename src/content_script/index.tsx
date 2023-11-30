@@ -1,13 +1,13 @@
-import './index.css?inline';
-
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
 import { store } from '../store/store';
-import Settings from './components/Settings';
+import Settings from './Settings';
 
 const app = document.createElement('div');
 app.id = 'CRA-container';
-document.body.appendChild(app);
-// eslint-disable-next-line react/no-deprecated
-ReactDOM.render(<Provider store={store}><Settings /></Provider>, app);
+window.addEventListener('load', () => {
+  document.body.appendChild(app);
+  // eslint-disable-next-line react/no-deprecated
+  ReactDOM.render(<Provider store={store}><Settings /></Provider>, app);
+}, false);

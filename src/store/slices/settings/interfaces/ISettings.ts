@@ -1,4 +1,17 @@
+export type TImage = {
+  src: string;
+  srcset?: string;
+};
+
+export type TSettingsItem = {
+  name?: string;
+  image?: TImage;
+} | null;
+
 export default interface ISettings {
-  density: any;
-  inboxType: any;
+  isVisibleGmailSettings: boolean;
+  isVisibleSidebar: boolean;
+  densityType: TSettingsItem;
+  inboxType: TSettingsItem;
+  readingPaneType: TSettingsItem;
 }
