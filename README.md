@@ -23,7 +23,7 @@ Your app is ready to be deployed!
 
 ### `npm run build`
 
-1) Go to the [chrome://extensions/](chrome://extensions/) 
+1) Go to the `chrome://extensions/` in your browser.
 2) Enable the `Developer mode` in the top right corner.
 3) and click on the `Load unpacked` button.
 4) Select the `build` folder from the project directory.
